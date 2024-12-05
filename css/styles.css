@@ -1,34 +1,35 @@
-
+/* загальні та скидання */
 body {font-family: 'Roboto', sans-serif; 
     color: #434455; 
     background-color: #ffffff; }
 
-/* варіант загальних стилів для тексту
-h1 {font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07143;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #fff; 
-    background-color: #2e2f42;} 
-h2 {font-weight: 700;
-    font-size: 36px;
-    color: #2e2f42;} 
-h3 {font-weight: 500;
-    font-size: 20px;
-    color: #2e2f42;} 
-p {font-weight: 400;
-    font-size: 16px;
-    color: #434455;} */
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+
+ul, ol {
+    margin: 0;
+    padding: 0; 
+list-style-type: none;} 
+
+img {display: block; max-width: 100%;} 
 
 a {text-decoration: none;}
 
-ul, ol {list-style-type: none;}
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;} 
 
-/* резерв header 
-.header-page {}
+/* header */
 
-.header-nav {}*/
+.header-page { border-bottom: 1px solid #e7e9fc;} 
+
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;}
+
+.header-nav {display: flex;
+    align-items: center;}
 
 .logo {font-family: "Raleway", sans-serif; font-weight: 700;
     font-size: 18px;
@@ -37,26 +38,36 @@ ul, ol {list-style-type: none;}
     text-transform: uppercase;
     color: #4d5ae5;}
 
+.header-logo {padding: 24px 0; 
+margin-right: 76px;}
+
 .header-logo .logo-part {color: #2e2f42;}
 
-/* резерв nav 
-.nav-list {}
+.nav-list {display: flex;
+    align-items: center; 
+    gap: 40px;}
 
-.nav-item {} */
+.nav-item {}
 
-.nav-link {font-weight: 500;
+.nav-link {display: block;
+    padding: 24px 0;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;} 
 
-/* резерв address .contacts-list {}
+.contacts-list {display: flex;
+    align-items: center; 
+    gap: 40px;}
 
-.contacts-item {} */
+.contacts-item {}
 
 .contacts {font-style: normal}
 
-.contacts-link {font-weight: 400;
+.contacts-link {display: block;
+    padding: 24px 0;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -122,7 +133,8 @@ ul, ol {list-style-type: none;}
 
 .team-item { background-color: #FFFFFF } 
 
-/* резерв team .team-list {} */
+/* резерв team 
+.team-list {} */
 
 .team-h-three { font-weight: 500;
     font-size: 20px;
